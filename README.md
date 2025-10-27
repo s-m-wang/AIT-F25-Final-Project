@@ -13,3 +13,6 @@ I want to be able to communicate with other users on the site to ask them questi
 
 # Potential Research Topics
 Question generating API that uses specified info to create questions
+
+![alt text](./wireframes%20and%20site%20map/site%20map.jpg)
+![alt text](./wireframes%20and%20site%20map/wireframe.jpg)

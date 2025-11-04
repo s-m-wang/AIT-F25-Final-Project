@@ -11,11 +11,11 @@ Special Instructions for Using Form (or Login details if auth is part of your pr
 
 URL for form 
 ---
-(TODO: add link to a functioning form; this will likely be `your-repo-name.onrender.com`)
+(https://ait-f25-final-project.onrender.com/create)
 
 URL for form result
 ---
-(TODO: if applicable, add link to page that shows results of submitting form)
+localhost:3000/my-sets
 
 URL to github that shows line of code where research topic(s) are used / implemented
 --- 

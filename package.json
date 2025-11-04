@@ -20,6 +20,7 @@
   "version": "1.0.0",
   "description": "Final Project for AIT F25",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "node src/app.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"

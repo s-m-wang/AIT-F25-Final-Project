@@ -1,0 +1,71 @@
+.title {
+    display: flex;
+    font-size: 3vw;
+    align-self: center;
+    justify-self: center;
+    margin-top: 10vw;
+}
+
+.setInfo {
+    display: flex;
+    font-size: 3vw;
+    align-self: center;
+    justify-self: center;
+    margin-top: 5vw;
+    flex-direction: column;
+}
+
+#label {
+    margin-bottom: -5vh;
+    font-size: 3vh;
+}
+
+.description {
+    font-size: 3vh;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    margin-top: 2vh;
+}
+
+.header {
+    display: flex;
+    height: 12vh;
+    justify-self: center;
+    background-color: gray;
+    width: 100vw;
+    margin-top: -20px;
+    align-items: center;
+    ;
+}
+
+#createBut {
+    font-size: 1.5vw;
+    height: 5vh;
+    margin: 3vw;
+    border-radius: 8px;
+}
+
+#createBut:active:hover {
+      background-color: gray; /* Color when clicked */
+}
+#createBut:hover {
+      background-color: white; /* Color when clicked */
+      cursor: pointer;
+}
+
+.set {
+    display: flex;
+    justify-self: center;
+    margin-top: 3vw;
+    font-size: 3vh;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}

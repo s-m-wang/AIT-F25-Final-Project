@@ -23,8 +23,8 @@ Special Instructions for Form 2
 
 URL(s) to github repository with commits that show progress on research
 --- 
-(TODO: add link to github url that shows line or lines of code that demonstrate continued progress on research topics)
+https://github.com/s-m-wang/AIT-F25-Final-Project/commit/314f5ddc31c48aab3892c63f70f95c17f1012b71
 
 References 
 ---
-(TODO: if applicable, links to annotated lines of code in github repository that were based off of tutorials / articles / sample projects)
+https://www.dicebear.com/styles/lorelei/

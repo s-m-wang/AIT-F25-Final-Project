@@ -1,6 +1,22 @@
 <div class="title">{{set.name}}</div>
 <div class="description">{{set.description}}</div>
 
+<!-- display each card here -->
+{{#if cards}}
+    {{#each cards}}
+    <div class="Card">
+        <div class="term">{{this.name}}</div>
+        <div class="def">{{this.description}}</div>
+    </div>
+    {{/each}}
+{{else}}
+<div class="empty">
+    <h1>No Cards</h1>
+</div>
+
+{{/if}}
+
+
 <!-- form for card -->
 <form method="POST" action="" class="cardInfo">
     <label for="setName" id="label">Create a Card</label><br>
@@ -9,12 +25,17 @@
     <input type="submit" style="display:flex; margin-left: 25vw; margin-top: 3vh; justify-self:end; height: 2vw; width: 10vh; font-size: 2vh;">
 </form>
 
-<!-- add button card here -->
-<div class="add-card">
-    <input type="button" id="show-form" value="Add a Card"> 
-</div>
+<div class="options">
+    <!-- add button card here -->
+    <div class="add-card">
+        <input type="button" id="show-form" style="margin-bottom: 20vh;"value="Add a Card"> 
+    </div>
 
-<!-- display each card here -->
+    <!-- test button here -->
+    <div class="test">
+        <input type="button" id="test" style="margin-bottom: 20vh;"value="Test"> 
+    </div>
+</div>
 
 <script>
     const add_form = document.getElementById('show-form');

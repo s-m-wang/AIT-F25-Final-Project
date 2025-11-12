@@ -90,3 +90,59 @@ a:visited {
     margin-top: 5vw;
     flex-direction: column;
 }
+
+.Card {
+    margin-top: 3vw;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-self: center;
+}
+
+.term {
+    border: 3px solid black;
+    display: flex;
+    font-size: 3vh;
+    width: 20vw;
+    height: 15vh;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.def {
+    border: 3px solid black;
+    display: flex;
+    font-size: 3vh;
+    width: 20vw;
+    height: 15vh;
+    justify-content: center; 
+    align-items: center; 
+    margin-left: 2vh;
+}
+
+.test{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 4vh;
+    margin-left: 3vh;
+}
+
+.options{
+    margin-top: 3vw;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-self: center;
+}
+
+#test{
+    font-size: 3vh;
+    padding: 1.5vw;
+    width: 12vw;
+}
+
+.empty {
+    display: flex;
+    justify-self: center;
+}

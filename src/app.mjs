@@ -5,18 +5,6 @@ import sanitize from 'mongo-sanitize';
 import express from 'express';
 const app = express();
 
-//create random avatar for new user
-//THIS IS A WIP from dicebear API
-import { createAvatar } from '@dicebear/core';
-import { lorelei } from '@dicebear/collection';
-
-const avatar = createAvatar(lorelei, {
-  seed: 'John Doe',
-  // ... other options
-});
-
-const svg = avatar.toString();
-
 import url from 'url';
 import path from 'path';
 const __dirname = path.dirname(url.fileURLToPath(import.meta.url))

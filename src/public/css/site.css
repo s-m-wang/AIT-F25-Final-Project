@@ -146,3 +146,7 @@ a:visited {
     display: flex;
     justify-self: center;
 }
+
+#profile-pic {
+    width: 10vh;
+}

@@ -7,7 +7,7 @@ https://github.com/s-m-wang/AIT-F25-Final-Project
 
 URL for form 1 (from previous milestone) 
 ---
-(TODO: add link to a functioning form)
+https://ait-f25-final-project.onrender.com/create
 
 Special Instructions for Form 1
 ---
@@ -15,7 +15,7 @@ Special Instructions for Form 1
 
 URL for form 2 (for current milestone)
 ---
-(TODO: if applicable, add link to page that shows results of submitting form)
+https://ait-f25-final-project.onrender.com/sets/Genki%20II%20Ch.%2021%20Vocab 
 
 Special Instructions for Form 2
 ---

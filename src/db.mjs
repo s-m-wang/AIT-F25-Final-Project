@@ -11,6 +11,7 @@ const SetSchema = new mongoose.Schema({
 
 const CardSchema = new mongoose.Schema({
     name: String,
+    description: String,
     set: { type: Schema.Types.ObjectId, ref: 'Set' },
 }, {timestamps: true}); 
 

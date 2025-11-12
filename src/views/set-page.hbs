@@ -1,2 +1,26 @@
 <div class="title">{{set.name}}</div>
 <div class="description">{{set.description}}</div>
+
+<!-- form for card -->
+<form method="POST" action="" class="cardInfo">
+    <label for="setName" id="label">Create a Card</label><br>
+    <input type="text" placeholder="Term" style="width: 30vw; height: 5vh; font-size: 3vh;" id="cardName" name="cardName" value="">
+    <input type="text" placeholder="Definition" style="width: 30vw; margin-top: 2vh; height: 5vh; font-size: 3vh;" id="cardDesc" name="cardDesc" value="">
+    <input type="submit" style="display:flex; margin-left: 25vw; margin-top: 3vh; justify-self:end; height: 2vw; width: 10vh; font-size: 2vh;">
+</form>
+
+<!-- add button card here -->
+<div class="add-card">
+    <input type="button" id="show-form" value="Add a Card"> 
+</div>
+
+<!-- display each card here -->
+
+<script>
+    const add_form = document.getElementById('show-form');
+    const form = document.querySelector('.cardInfo');
+    add_form.addEventListener('click', display_form);
+    function display_form() {
+        form.style.display = 'flex';
+    }
+</script>

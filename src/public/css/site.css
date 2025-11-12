@@ -69,3 +69,24 @@ a:visited {
     text-decoration: none;
     color: black;
 }
+
+.add-card {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 4vh;
+}
+
+#show-form {
+    font-size: 3vh;
+    padding: 1.5vw;
+}
+
+.cardInfo {
+    display: none;
+    font-size: 3vw;
+    align-self: center;
+    justify-self: center;
+    margin-top: 5vw;
+    flex-direction: column;
+}

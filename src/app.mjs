@@ -67,3 +67,27 @@ app.get('/my-sets', async (req, res) => {
     const sets = await Set.find({});
 	res.render('sets', {sets});
 });
+
+//adding a new card:
+app.post('/sets/:setName', async (req, res) => {
+  const setName = req.params.setName;
+  const set = await Set.findOne({ name: setName });
+  if (!set) {
+    return res.status(404).send('Set not found');
+  }
+
+  //create new card:
+  const card = new Set({
+    name: sanitize(req.body.cardName), 
+    description: sanitize(req.body.cardDesc),
+    set: set
+  });
+
+
+  try {
+    await set.save();
+    res.render('set-page', { set }); //render with new cards
+  } catch(err) {
+    res.render('set-page', { set }); //render without
+  }
+});

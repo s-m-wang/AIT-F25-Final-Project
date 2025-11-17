@@ -150,3 +150,17 @@ a:visited {
 #profile-pic {
     width: 10vh;
 }
+
+.err {
+    display: flex;
+    justify-self: center;
+    margin-bottom: -5vh;
+}
+
+.Card img {
+    margin-left: 2vh;
+  width: 15vh;
+  height: 7vw;        /* adjust to any fixed height you want */
+  border-radius: 8px;   /* optional – looks nicer */
+  margin-top: 8px;      /* spacing from description */
+}

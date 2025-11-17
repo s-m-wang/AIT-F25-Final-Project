@@ -11,15 +11,17 @@
 
             <button type="button" id="createBut"><a href="/create">Create</a></button>
             <button type="button" id="createBut" style="margin-left:-1.5vw;"><a href="/my-sets">My Sets</a></button>
+            {{#if currentUser}}
+            <form action="/logout" method="POST" style="display:inline;">
+                <button type="submit" id="createBut" style="margin-left:-1.5vw;">Logout</button>
+            </form>
+            <img src="{{currentUser.url}}" alt="avatar" id="profile-pic" style="margin-left:-1.5vw;"/>
+            <div>Logged in as {{currentUser.username}}</div>
+            {{else}}
+            <button type="button" id="createBut" style="margin-left:-1.5vw;"><a href="/register">Sign Up</a></button>
+            <button type="button" id="createBut" style="margin-left:-1.5vw;"><a href="/login">Login</a></button>
+            {{/if}}
 
-            <img src="https://api.dicebear.com/9.x/notionists/svg?seed=Felix" alt="avatar" id="profile-pic"/>
-            <script>
-                const myImage = document.getElementById('profile-pic');
-                const style = 'lorelei'; 
-                const randomSeed = Math.random().toString(36).substring(2, 15);
-                //API URL
-                myImage.src = `https://api.dicebear.com/7.x/${style}/svg?seed=${randomSeed}`;
-            </script>
         </div>
         {{{body}}}
     </body>

@@ -6,8 +6,11 @@
     {{#each cards}}
     <div class="Card">
         <div class="term">{{this.name}}</div>
-        <div class="def">{{this.description}}</div>
-    </div>
+        <div class="def">{{this.description}} 
+            {{#if this.url}}
+                <img src="{{this.url}}" alt="card image">
+            {{/if}}</div>
+        </div>
     {{/each}}
 {{else}}
 <div class="empty">

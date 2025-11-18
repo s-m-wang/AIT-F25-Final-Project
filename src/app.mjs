@@ -1,6 +1,8 @@
 import dotenv from 'dotenv';
 dotenv.config();
 
+PEXELS_API_KEY=z3PhGq4QrUG6oJLoyC9mfKNoIfxJpb8iXwfcUPBuz6WZkguM7dbBOu64;
+
 import './config.mjs';
 import './db.mjs';
 import mongoose from 'mongoose';
@@ -127,18 +129,18 @@ app.post('/sets/:setName', ensureLoggedIn, async (req, res) => {
   let url;
   try {
     const result = await pexelsClient.photos.search({
-      query: req.body.cardDesc,        // or req.body.cardDesc
+      query: req.body.cardDesc, 
       per_page: 1
     });
 
     if (result && Array.isArray(result.photos) && result.photos.length > 0) {
       url = result.photos[0].src.medium;
     } else {
-      url = '';  // fallback
+      url = ''; 
     }
   } catch (e) {
     console.error('Pexels error:', e);
-    url = '';    // fallback on error too
+    url = '';
   }
 
   //create new card:
@@ -184,6 +186,7 @@ app.post('/register', async (req, res) => {
   try {
     const username = sanitize(req.body.user);
     const password = req.body.pass;
+
     //random pfp:
     const style = 'lorelei'; 
     const randomSeed = Math.random().toString(36).substring(2, 15);

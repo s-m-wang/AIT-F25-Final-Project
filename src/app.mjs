@@ -1,7 +1,6 @@
 import dotenv from 'dotenv';
 dotenv.config();
 
-PEXELS_API_KEY=z3PhGq4QrUG6oJLoyC9mfKNoIfxJpb8iXwfcUPBuz6WZkguM7dbBOu64;
 
 import './config.mjs';
 import './db.mjs';

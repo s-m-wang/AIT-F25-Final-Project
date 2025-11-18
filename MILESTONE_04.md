@@ -44,6 +44,7 @@ https://ait-f25-final-project.onrender.com/login
 
 Special Instructions for Form 3
 ---
+There is an account already created. The user is "test" and pass is "test".
 You can't have the same user and pass as someone else. There isn't a limit to how long or short the passwords can be. This is mostly
 to make testing easier.
 

@@ -1,4 +1,35 @@
-<div class="title">My Sets</div>
+
+<div style="display: flex; flex-direction: row; justify-content: center; font-size: 8vh; margin-top: 15vh">
+    <div>My Sets</div> 
+    <!-- icon api lordicon-->
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <lord-icon
+        id ="trash"
+        src="https://cdn.lordicon.com/oqeixref.json"
+        trigger="hover"
+        style="width:5vh;height:5vh; display: flex; justify-content: center; align-self: center">
+    </lord-icon>
+</div>
+<form method="POST" action="" class="delete" style="align-content: center; justify-content: center">
 {{#each sets}}
-    <div class="set"><a href="/sets/{{name}}">{{name}}</a></div>
+    <div class="set"> 
+        <a href="/sets/{{name}}">{{name}}</a>  <input type="checkbox" class="set-box"name="checked" style="display: none" value="{{this._id}}">
+    </div>
 {{/each}}
+<div style="display:flex; align-self: center; justify-content: center; align-items: center"><input type="submit" id="delete" name="delete" value="Delete" style="display: none; justify-content: center; align-self: center"></div>
+</form>
+<script>
+    const boxes = Array.from(document.querySelectorAll(".set-box"));
+    const trash = document.querySelector("#trash");
+    const del = document.querySelector("#delete");
+    function displayChecks () {
+        if (!boxes.length) return;
+        boxes.map(box => {
+            box.style.display = "block";
+        });
+        del.style.display = "flex";
+        console.log("clicked");
+    }
+    trash.addEventListener('click', displayChecks);
+</script>

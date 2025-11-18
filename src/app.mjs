@@ -117,6 +117,24 @@ app.get('/my-sets', ensureLoggedIn, async (req, res) => {
 	res.render('sets', {sets});
 });
 
+app.post('/my-sets', ensureLoggedIn, async (req, res) => {
+  const ids = req.body.checked;
+
+  if (!ids) {
+    return res.redirect('/my-sets'); // nothing checked
+  }
+  await Card.deleteMany({
+    set: { $in: ids}
+  });
+
+  await Set.deleteMany({
+    _id: { $in: ids},
+    user: req.user._id
+  });
+
+  res.redirect('/my-sets');
+});
+
 //adding a new card:
 app.post('/sets/:setName', ensureLoggedIn, async (req, res) => {
   const setName = req.params.setName;

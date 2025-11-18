@@ -55,10 +55,13 @@
 }
 
 .set {
-    display: flex;
-    justify-self: center;
-    margin-top: 3vw;
-    font-size: 3vh;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  font-size: 3vh;
 }
 
 a:link {

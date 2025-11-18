@@ -2,6 +2,7 @@
   "dependencies": {
     "@dicebear/collection": "^9.2.4",
     "@dicebear/core": "^9.2.4",
+    "@lordicon/element": "^2.0.1",
     "bcrypt": "^6.0.0",
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
@@ -10,7 +11,8 @@
     "mongoose": "^8.19.2",
     "passport": "^0.7.0",
     "passport-local": "^1.0.0",
-    "pexels": "^1.4.0"
+    "pexels": "^1.4.0",
+    "startbootstrap-agency": "^7.0.12"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.0",

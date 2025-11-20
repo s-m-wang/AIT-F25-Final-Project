@@ -84,6 +84,10 @@ Links to github line number(s) for research topics described above (one link per
 
 Optional project notes 
 --- 
+Also, I just found out that Pexels apparently has a lot of server shutdowns which might lead to the images not popping up when you make the cards. So, 
+if they don't show up, check if Pexels has a server shutdown, and if so, maybe try again later to test the images. 
+And, because I'm using the free version, you can't have more than 200 pictures
+uploaded in an hour, so when testing, please don't exceed 200 cards with photos. 
 I have a fourth form. It's the trashcan. It pops up a delete form for all of the currently existing sets. The trashcan is a little slow to respond,
 so you might have to try clicking it a few times. 
 
